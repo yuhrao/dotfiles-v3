@@ -66,11 +66,11 @@ export PATH="$PATH:$HOME/.local/bin"
 
 export PATH="/opt/homebrew/bin:$PATH"
 
-if [ -f $HOME/dev/tools/bash-insulter/src/bash.command-not-found ]; then
-    . $HOME/dev/tools/bash-insulter/src/bash.command-not-found
+if [ -f $HOME/playground/tools/bash-insulter/src/bash.command-not-found ]; then
+    . $HOME/playground/tools/bash-insulter/src/bash.command-not-found
 else
-  git clone https://github.com/hkbakke/bash-insulter.git $HOME/dev/tools/bash-insulter/
-  . $HOME/dev/tools/bash-insulter/src/bash.command-not-found
+  git clone https://github.com/hkbakke/bash-insulter.git $HOME/playground/tools/bash-insulter/
+  . $HOME/playground/tools/bash-insulter/src/bash.command-not-found
 fi
 
 if [ $(command -v yarn) ]; then
