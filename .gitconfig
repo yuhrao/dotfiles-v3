@@ -1,0 +1,48 @@
+[user]
+	name = Yuhri Graziano Bernardes
+	email = yuhri.graziano@gmail.com
+	signingKey = 50B74A3EB80A18AE967347D599256F071254E0C0
+
+[gpg]
+	program = gpg
+
+[commit]
+	gpgsign = true
+
+[tag]
+	forceSignAnnotated = true
+
+[init]
+	defaultBranch = "main"
+
+[credential]
+	helper = store
+
+[core]
+	editor = nvim
+
+[core]
+    pager = delta
+    whitespace = true
+    excludesfile = /Users/yuhribernardes/.gitignore
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    line-numbers= true
+    side-by-side = true
+
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[push]
+	default = current

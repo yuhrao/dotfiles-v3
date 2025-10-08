@@ -1,0 +1,101 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space": null,
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "escape": "editor::Cancel"
+    }
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == normal",
+    "bindings": {
+      "space q": "diagnostics::Deploy",
+      "space b d": "pane::CloseActiveItem",
+      "space /": "buffer_search::Deploy",
+      "space f": "editor::Format",
+      "space s h": "zed::OpenKeymap",
+      "space s k": "zed::OpenKeymap",
+      "space s f": "file_finder::Toggle",
+      "space s s": "command_palette::Toggle",
+      "space s w": "search::SelectNextMatch",
+      "space s d": "diagnostics::Deploy",
+      "space s r": "search::ToggleReplace",
+      "space s n": "project_panel::ToggleFocus",
+      "space e e": "diagnostics::Deploy",
+      "space e E": "diagnostics::Deploy",
+      "space c s": "outline::Toggle",
+      "space c l": "editor::GoToDefinition",
+      "space x L": "diagnostics::Deploy",
+      "space x Q": "diagnostics::Deploy",
+      "space t t": "task::Rerun",
+      "space t T": "task::Rerun",
+      "space t r": "task::Rerun",
+      "space t l": "task::Rerun",
+      "space t s": "outline::Toggle",
+      "space t o": "task::Rerun",
+      "space t O": "task::Spawn",
+      "space t S": "task::Rerun",
+      "space t w": "task::Rerun",
+      "space t d": "editor::ToggleCodeActions",
+      "space j j": "editor::MoveToBeginning",
+      "space j J": "outline::Toggle",
+      "space j r": "editor::Rename",
+      "space j t": "outline::Toggle",
+      "space j s": "buffer_search::Deploy",
+      "space o A": "assistant::InlineAssist",
+      "space o a": "assistant::InlineAssist",
+      "space o y": "editor::Copy",
+      "space o p": "assistant::InlineAssist",
+      "space o e": "assistant::InlineAssist",
+      "space T h": "editor::ToggleInlayHints",
+      "g r n": "editor::Rename",
+      "g r a": "editor::ToggleCodeActions",
+      "g r r": "editor::FindAllReferences",
+      "g r i": "editor::GoToImplementation",
+      "g r d": "editor::GoToDefinition",
+      "g r D": "editor::GoToDeclaration",
+      "g O": "outline::Toggle",
+      "g W": "project_symbols::Toggle",
+      "g r t": "editor::GoToTypeDefinition",
+      "g n n": "editor::SelectNext",
+      "] ]": "editor::GoToHunk",
+      "] c": "editor::GoToHunk",
+      "\\": "project_panel::ToggleFocus",
+      "f 1": "editor::GoToDefinition",
+      "f 2": "editor::GoToDefinition",
+      "f 3": "editor::GoToDefinition",
+      "f 5": "editor::GoToDefinition",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "\\": "workspace::ToggleLeftDock",
+      "Y": "project_panel::Copy",
+      "y": "project_panel::Copy"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape escape": "terminal::Clear",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "escape": "editor::Cancel",
+      "ctrl-h": "pane::ActivatePrevItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-j": "pane::SplitDown",
+      "ctrl-k": "pane::SplitUp"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "space q": "diagnostics::Deploy",
+      "space b d": "pane::CloseActiveItem",
+      "space /": "buffer_search::Deploy",
+      "space space": "file_finder::Toggle",
+      "space r": "search::DeployReplace",
+      "space f": "editor::Format",
+      "space s h": "zed::OpenKeymap",
+      "space s k": "zed::OpenKeymap",
+      "space s f": "file_finder::Toggle",
+      "space s s": "command_palette::Toggle",
+      "space s w": "search::SelectNextMatch",
+      "space s g": "search::Deploy",
+      "space s d": "diagnostics::Deploy",
+      "space s r": "search::ToggleReplace",
+      "space s .": "recent_projects::OpenRecent",
+      "space s /": "search::Deploy",
+      "space s n": "project_panel::ToggleFocus",
+      "space e e": "diagnostics::Deploy",
+      "space e E": "diagnostics::Deploy",
+      "space c s": "outline::Toggle",
+      "space c l": "editor::GoToDefinition",
+      "space x L": "diagnostics::Deploy",
+      "space x Q": "diagnostics::Deploy",
+      "space l g": "terminal::Deploy",
+      "space t t": "task::Rerun",
+      "space t T": "task::Rerun",
+      "space t r": "task::Rerun",
+      "space t l": "task::Rerun",
+      "space t s": "outline::Toggle",
+      "space t o": "task::Rerun",
+      "space t O": "task::Spawn",
+      "space t S": "task::Rerun",
+      "space t w": "task::Rerun",
+      "space t d": "editor::ToggleCodeActions",
+      "space j j": "editor::MoveToBeginning",
+      "space j J": "outline::Toggle",
+      "space j r": "editor::Rename",
+      "space j t": "outline::Toggle",
+      "space j s": "buffer_search::Deploy",
+      "space o A": "assistant::InlineAssist",
+      "space o a": "assistant::InlineAssist",
+      "space o t": "assistant::ToggleFocus",
+      "space o n": "assistant::NewThread",
+      "space o y": "editor::Copy",
+      "space o p": "assistant::InlineAssist",
+      "space o e": "assistant::InlineAssist",
+      "space h s": "editor::ToggleHunkDiff",
+      "space h r": "editor::RevertSelectedHunks",
+      "space h S": "editor::ToggleHunkDiff",
+      "space h u": "editor::ToggleHunkDiff",
+      "space h R": "editor::RevertFile",
+      "space h p": "editor::ToggleHunkDiff",
+      "space h b": "editor::ToggleGitBlame",
+      "space h d": "editor::ToggleHunkDiff",
+      "space h D": "editor::ToggleHunkDiff",
+      "space t b": "editor::ToggleGitBlame",
+      "space t D": "editor::ToggleHunkDiff",
+      "space T h": "editor::ToggleInlayHints",
+      "g r n": "editor::Rename",
+      "g r a": "editor::ToggleCodeActions",
+      "g r r": "editor::FindAllReferences",
+      "g r i": "editor::GoToImplementation",
+      "g r d": "editor::GoToDefinition",
+      "g r D": "editor::GoToDeclaration",
+      "g O": "outline::Toggle",
+      "g W": "project_symbols::Toggle",
+      "g r t": "editor::GoToTypeDefinition",
+      "g n n": "editor::SelectNext",
+      "] ]": "editor::GoToHunk",
+      "[ [": "editor::GoToPrevHunk",
+      "] c": "editor::GoToHunk",
+      "[ c": "editor::GoToPrevHunk",
+      "\\": "project_panel::ToggleFocus",
+      "f 1": "editor::GoToDefinition",
+      "f 2": "editor::GoToDefinition",
+      "f 3": "editor::GoToDefinition",
+      "f 5": "editor::GoToDefinition",
+      "f 7": "terminal::Deploy"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "\\": "workspace::ToggleLeftDock",
+      "Y": "project_panel::Copy",
+      "y": "project_panel::Copy"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape escape": "terminal::Clear",
+      "ctrl-h": "pane::ActivatePrevItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-j": "pane::SplitDown",
+      "ctrl-k": "pane::SplitUp"
+    }
+  }
+]
