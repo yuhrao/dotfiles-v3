@@ -81,14 +81,6 @@
     }
   },
   {
-    "context": "ProjectPanel",
-    "bindings": {
-      "\\": "workspace::ToggleLeftDock",
-      "Y": "project_panel::Copy",
-      "y": "project_panel::Copy"
-    }
-  },
-  {
     "context": "Terminal",
     "bindings": {
       "escape escape": "terminal::Clear",
