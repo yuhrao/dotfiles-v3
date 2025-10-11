@@ -1,4 +1,6 @@
 # Source credentials if it exists
+eval "$(direnv hook zsh)"
+
 if [ -f "$HOME/.zsh/credentials.zsh" ]; then
   source "$HOME/.zsh/credentials.zsh"
 fi
@@ -337,3 +339,5 @@ eval "$(mise activate zsh)"
 
 # bun completions
 [ -s "/Users/yuhrao/.bun/_bun" ] && source "/Users/yuhrao/.bun/_bun"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
