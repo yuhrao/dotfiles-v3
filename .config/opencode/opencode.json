@@ -5,6 +5,10 @@
     "chrome": {
       "type": "local",
       "command": ["bunx", "-y", "chrome-devtools-mcp@latest"]
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["bunx", "-y", "@playwright/mcp@latest"]
     }
   }
 }
