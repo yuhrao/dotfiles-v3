@@ -341,3 +341,6 @@ eval "$(mise activate zsh)"
 [ -s "/Users/yuhrao/.bun/_bun" ] && source "/Users/yuhrao/.bun/_bun"
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+export OP_CONFIG_DIR="$HOME/.op"
+eval "$(op completion zsh)"; compdef _op op;
