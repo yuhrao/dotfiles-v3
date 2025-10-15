@@ -19,6 +19,7 @@ return {
         javascriptreact = { 'template_string' },
         typescriptreact = { 'template_string' },
         java = false,
+        clojure = { 'string' },
       },
       disable_filetype = { 'TelescopePrompt', 'spectre_panel' },
       enable_check_bracket_line = true,
@@ -68,6 +69,14 @@ return {
       Rule('%(.*%)%s*%=>$', ' {  }', { 'typescript', 'typescriptreact', 'javascript', 'javascriptreact' })
         :use_regex(true)
         :set_end_pair_length(2),
+    }
+
+    -- Clojure-specific autopairs
+    npairs.add_rules {
+      Rule('(', ')', { 'clojure', 'fennel' }):with_pair(cond.not_after_regex '[%w_]'),
+      Rule('[', ']', { 'clojure', 'fennel' }):with_pair(cond.not_after_regex '[%w_]'),
+      Rule('{', '}', { 'clojure', 'fennel' }):with_pair(cond.not_after_regex '[%w_]'),
+      Rule('"', '"', { 'clojure', 'fennel' }):with_pair(cond.not_after_regex '[%w_]'),
     }
 
     -- Integration with blink.cmp is automatic when blink.cmp is installed

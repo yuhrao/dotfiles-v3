@@ -840,6 +840,34 @@ require('lazy').setup({
         -- https://github.com/pmizio/typescript-tools.nvim
         --
 
+        clojure_lsp = {
+          settings = {
+            completion = {
+              ['analysis-type'] = 'slow-but-accurate',
+              ['additional-edits-warning-text'] = 'This completion will add a new require/import',
+            },
+            ['semantic-tokens?'] = true,
+            ['text-document-sync-kind'] = ':incremental',
+            ['notify-references-on-file-change'] = true,
+            analysis = {
+              keywords = {
+                definitions = true,
+                usages = true,
+              },
+              java = {
+                ['class-definitions'] = true,
+                ['member-definitions'] = true,
+              },
+              symbols = true,
+            },
+            hover = {
+              ['arity-on-same-line?'] = false,
+              clojuredocs = true,
+              ['hide-file-location?'] = false,
+            },
+          },
+        },
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -916,6 +944,8 @@ require('lazy').setup({
         'delve',
         'sql-formatter',
         'tailwindcss-language-server', -- Tailwind CSS LSP
+        'clojure-lsp',
+        'clj-kondo',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -1240,6 +1270,9 @@ require('lazy').setup({
         'typescript',
         'javascript',
         'tsx',
+        'clojure',
+        'markdown',
+        'markdown_inline',
         -- Add others only as needed
       },
       -- Disable auto-install for better startup performance

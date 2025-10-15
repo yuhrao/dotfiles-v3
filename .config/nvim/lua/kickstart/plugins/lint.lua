@@ -13,6 +13,7 @@ return {
         typescriptreact = { 'eslint_d' },
         vue = { 'eslint_d' },
         svelte = { 'eslint_d' },
+        clojure = { 'clj-kondo' },
       }
 
       -- Configure eslint_d to respect project root
