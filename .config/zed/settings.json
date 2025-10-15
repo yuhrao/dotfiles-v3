@@ -1,8 +1,9 @@
 {
+  "format_on_save": "on",
   "icon_theme": "Catppuccin Macchiato",
-  "ui_font_size": 16,
+  "ui_font_size": 18,
   "ui_font_family": "CommitMono Nerd Font Propo",
-  "buffer_font_size": 15,
+  "buffer_font_size": 18,
   "buffer_font_family": "JetBrainsMono Nerd Font Propo",
   "theme": {
     "mode": "system",
@@ -21,5 +22,10 @@
   },
   "git_panel": {
     "dock": "right"
+  },
+  "languages": {
+    "TypeScript": {
+      "format_on_save": "prettier"
+    }
   }
 }
